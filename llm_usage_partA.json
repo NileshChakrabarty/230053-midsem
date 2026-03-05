@@ -1,0 +1,139 @@
+{
+  "student_metadata": {
+    "name": "Nilesh Chakrabarty",
+    "roll_number": "230053",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-05"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-05",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "purpose": "Understanding the overall exam structure and all instructions before beginning paper selection",
+      "prompt": "go through the entire pdf and understand all the instructions given",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude gave a structured breakdown of all four exam parts (A, B, C, D), their weightages, timelines, and key rules. This helped me understand what I needed to do in Part A before I even started looking for papers.",
+      "student_verification": "I re-read the original PDF after Claude's summary and confirmed each point — the 48-hour deadline, the 50 marks, the mandatory GitHub repo, and the first-come-first-select uniqueness rule were all accurately captured.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-05",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "purpose": "Deep line-by-line reading of Part A specific instructions before starting paper selection",
+      "prompt": "this is our main job right now, so I need you to carefully go through each line of this document from first to last before we jump on to doing something",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude extracted every important detail including the exact paper constraints, the CORE A* venue list, reproducibility rules (CPU-only, no GPU, no proprietary data), the JSON structure required, and the resubmission penalty rule. This gave me a complete checklist to use when evaluating any paper candidate.",
+      "student_verification": "I personally cross-checked the evaluation rubric table (50 marks breakdown) from the PDF against Claude's summary to make sure all 12 criteria were captured correctly. The marks added up correctly to 50.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-05",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "purpose": "Finding available paper candidates by cross-referencing the already-taken papers list submitted by peers",
+      "prompt": "now your job will be to find research papers strictly following all the rules as mentioned in the previous 2 documents, should not violate any, and find out a relatively easy research paper within all the constraints given, here i have attached a pdf of all the research papers already taken by my peers, so make sure you don't pick any of these because this would lead to deduction in my marks",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Claude analyzed all peer submissions and mapped out which venues and years were saturated (ICML, JMLR, NeurIPS) versus open (ICDM 2011, AISTATS 2009-11, IJCAI 2010/2012, EMNLP). It recommended GMM as the least saturated category and gave three initial candidate directions. I used this to narrow my search area before exploring further.",
+      "student_verification": "I manually scrolled through the peer response sheet PDF and spot-checked 10 entries to confirm Claude had correctly identified which papers were taken. I verified that ICDM 2011 was genuinely empty and that the EMNLP venue had zero submissions.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-05",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "purpose": "Exploring more specific paper options specifically in time series and SVM categories",
+      "prompt": "give me more options from time series and SVM, keeping every other rule same and following everything we have planned out earlier",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Claude gave 5 time series options and 5 SVM options with venue and year for each. Most importantly it gave me three confirmed-free time series candidates: Online Motifs (KDD 2010), DTW Trillions (KDD 2012), and Epenthesis (ICDM 2011). This gave me a concrete shortlist to investigate.",
+      "student_verification": "I cross-checked that the KDD 2010 Online Motifs paper by Mueen and Keogh was not in the peer response sheet. I searched for both the paper title and the first author name in the sheet and found no match. I also confirmed that Abhishek's taken paper was a different paper from 2009 (Exact Discovery of Time Series Motifs) not the 2010 online version.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-05",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "purpose": "Comparing shortlisted paper candidates against all rules to identify the best and easiest option",
+      "prompt": "compare these papers and go though all the rules each line of the instructions of the pdf given and find out the best paper following each line of the instructions given, and the best possible paper, make sure it is relatively easy for to understand and work with it",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Claude ran a systematic rule-by-rule comparison table across all candidates. It identified that DTW Trillions had a reproducibility scope mismatch (cannot demonstrate trillions on a laptop), Epenthesis used MDL which is hard to explain without internet in Part C, and Online Motifs passed every rule cleanly with no caveats. This helped me make a confident, reasoned final selection.",
+      "student_verification": "I independently verified the DTW Trillions concern by reading the abstract — the paper title itself says 'trillions' which is clearly unrunnable on a laptop. I verified the MDL concern for Epenthesis by looking up what MDL means, confirming it requires knowledge of information theory concepts not in our course syllabus. The Online Motifs algorithm only uses sliding window and Euclidean distance which I confirmed are within scope of what we studied in class.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 6,
+      "date": "2026-03-05",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "purpose": "Final verification — checking that the selected paper passes every single line of the Part A instructions",
+      "prompt": "Online Discovery and Maintenance of Time Series Motifs Mueen & Keogh, KDD 2010 does this paper follow each line of the below instructions [full rule list from Part A PDF]",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude did a line-by-line pass of every rule in the Part A document against this specific paper, confirming it passes all 11 rule checks: year (2010), venue (KDD, explicitly listed as CORE A*), method alignment (time series), not a workshop, formal ACM DOI, methodological contribution (new algorithm), not arXiv-only, CPU-reproducible (pure numpy), public datasets (UCR archive), no restricted data. This gave me confidence to finalize my selection.",
+      "student_verification": "I went to the ACM Digital Library and searched for the paper title. I confirmed the DOI 10.1145/1835804.1835941 exists as a formally published paper in KDD'10 proceedings. I also visited the UCR Time Series Archive (timeseriesclassification.com) and confirmed it provides free public datasets with hundreds of time points, satisfying the 50+ consecutive time points rule.",
+      "confidence_level": 5
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 5,
+      "prompt": "compare these papers and go though all the rules each line of the instructions of the pdf given and find out the best paper following each line of the instructions given, and the best possible paper, make sure it is relatively easy for to understand and work with it",
+      "why_important": "This was the most critical prompt because it forced a structured multi-paper comparison against all exam rules simultaneously. It directly revealed the DTW Trillions reproducibility mismatch and the Epenthesis MDL complexity risk — both of which I would not have caught on my own. It led directly to my final selection of Online Motifs as the only zero-caveat candidate."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 6,
+      "prompt": "Online Discovery and Maintenance of Time Series Motifs Mueen & Keogh, KDD 2010 does this paper follow each line of the below instructions [full rule list from Part A PDF]",
+      "why_important": "This was a targeted verification prompt to confirm my final selection before committing. It gave me a rule-by-rule confirmation table covering all 11 constraints, which I then independently verified through ACM Digital Library and UCR archive. This is the prompt that made me confident enough to submit."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 2,
+      "prompt": "this is our main job right now, so I need you to carefully go through each line of this document from first to last before we jump on to doing something",
+      "why_important": "This prompt established the complete checklist I used throughout the entire selection process. The 12-criterion rubric, the resubmission penalty rule, the JSON structure requirements, and the CPU-only constraint all came from this reading. Without this foundation, any paper search would have been unstructured and likely would have missed a critical rule."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 3,
+      "prompt": "now your job will be to find research papers strictly following all the rules as mentioned in the previous 2 documents, should not violate any, and find out a relatively easy research paper within all the constraints given, here i have attached a pdf of all the research papers already taken by my peers, so make sure you don't pick any of these because this would lead to deduction in my marks",
+      "why_important": "This prompt identified which venues were genuinely open for selection by mapping all 80+ peer submissions. It prevented me from wasting time researching papers in already-saturated areas like JMLR and ICML, and pointed me toward KDD 2010, ICDM 2011, and AISTATS as open exploration zones. It also made the uniqueness rule concrete and actionable."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 4,
+      "prompt": "give me more options from time series and SVM, keeping every other rule same and following everything we have planned out earlier",
+      "why_important": "This prompt narrowed the search specifically to time series and SVM and surfaced the concrete shortlist of three time series papers (Online Motifs, DTW Trillions, Epenthesis). Without this step I would have had no concrete candidates to compare in the next step. It also confirmed that the distinction between Abhishek's taken 2009 motif paper and the 2010 online motif paper makes them non-duplicate selections."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A. All prompts listed are verbatim as entered. All responses used and verifications performed are accurately described. No interactions have been omitted or selectively edited.",
+    "understanding_acknowledged": true,
+    "signature": "Nilesh Chakrabarty",
+    "date": "2026-03-05"
+  }
+}
