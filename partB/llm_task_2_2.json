@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Implementation of the core streaming motif algorithm (N-list + R-list with Obs 1 + 2). All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 2.2"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Implement the OnlineMotifFinder class with N-list and R-list based on Algorithm Section 4.2 of the paper.",
+      "purpose": "To scaffold the core algorithm class structure"
+    },
+    {
+      "rank": 2,
+      "prompt": "How does Observation 2 filter work in code? Write the _apply_obs2 method.",
+      "purpose": "To implement the timestamp-monotone pruning logic"
+    },
+    {
+      "rank": 3,
+      "prompt": "How should the deletion step use the R-list to avoid recomputing distances?",
+      "purpose": "To implement the O(w) amortised deletion correctly"
+    },
+    {
+      "rank": 4,
+      "prompt": "How do I implement the non-overlapping constraint check during insertion?",
+      "purpose": "To enforce Definition 4 (|i - j| >= m)"
+    },
+    {
+      "rank": 5,
+      "prompt": "Write the brute-force motif finder for verification against the streaming result.",
+      "purpose": "To implement the ground-truth reference for correctness checking"
+    }
+  ]
+}

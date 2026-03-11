@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Results, comparison, and reproducibility checklist. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 2.3"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "How should I compare streaming motif distances against brute-force spot-checks across multiple window positions?",
+      "purpose": "To design the checkpoint-based verification comparison"
+    },
+    {
+      "rank": 2,
+      "prompt": "What explanations for discrepancy between paper results and toy dataset results are honest and academically appropriate?",
+      "purpose": "To draft the honest commentary on the gap with paper numbers"
+    },
+    {
+      "rank": 3,
+      "prompt": "What should a reproducibility checklist for a Jupyter notebook contain?",
+      "purpose": "To structure the reproducibility checklist cell"
+    },
+    {
+      "rank": 4,
+      "prompt": "How should I plot streaming motif distance over time with brute-force checkpoints overlaid?",
+      "purpose": "To design the task_2_3_result_comparison.png visualisation"
+    },
+    {
+      "rank": 5,
+      "prompt": "Is it a failure if my streaming algorithm's output is nearly zero on a synthetic dataset with planted identical motifs?",
+      "purpose": "To understand when near-zero motif distance is expected and correct"
+    }
+  ]
+}

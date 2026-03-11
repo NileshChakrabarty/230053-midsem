@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Core Contribution / Architecture \u2014 describing the N-list + R-list algorithm step by step. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 1.1"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Explain the OnlineMotifFinder algorithm step by step from the KDD 2010 paper, referencing specific equations and figures.",
+      "purpose": "To structure the step-by-step method description for Task 1.1"
+    },
+    {
+      "rank": 2,
+      "prompt": "What is Observation 2 in the paper and why does it enable sparse N-lists?",
+      "purpose": "To understand the temporal ordering pruning rule"
+    },
+    {
+      "rank": 3,
+      "prompt": "Describe the role of z-normalisation in making the algorithm invariant to amplitude scaling.",
+      "purpose": "To explain the preprocessing step in plain English"
+    },
+    {
+      "rank": 4,
+      "prompt": "What does the paper mean by treating subsequences as independent objects in R^m?",
+      "purpose": "To clarify the geometric interpretation of subsequence similarity"
+    },
+    {
+      "rank": 5,
+      "prompt": "What is the final summary sentence that best captures what this paper solves and what it claims to improve?",
+      "purpose": "To draft the final summary sentence for Task 1.1"
+    }
+  ]
+}

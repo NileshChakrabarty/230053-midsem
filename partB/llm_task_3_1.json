@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Two-component ablation: Observation 2 pruning and z-normalisation. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 3.1"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Which two components of the streaming motif algorithm are best for ablation \u2014 components that are independently removable and have demonstrably different effects?",
+      "purpose": "To choose Obs2 pruning and z-normalisation as the two ablation targets"
+    },
+    {
+      "rank": 2,
+      "prompt": "How do I ablate Observation 2 in the algorithm without breaking correctness, and what do I expect to observe?",
+      "purpose": "To design Ablation 1 and predict the expected outcome"
+    },
+    {
+      "rank": 3,
+      "prompt": "What metric should I use to compare full vs. ablated versions across all ticks?",
+      "purpose": "To decide to use motif distance arrays + brute-force spot-checks"
+    },
+    {
+      "rank": 4,
+      "prompt": "Will the full vs. ablation (no Obs2) motif distances be the same or different? Explain.",
+      "purpose": "To confirm that Obs2 is a correctness-preserving pruning"
+    },
+    {
+      "rank": 5,
+      "prompt": "How does removing z-normalisation change what the algorithm identifies as the motif in the presence of noise?",
+      "purpose": "To reason through the z-norm ablation's expected semantic effect"
+    }
+  ]
+}

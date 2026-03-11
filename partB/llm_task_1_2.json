@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Key Assumptions \u2014 three specific assumptions embedded in the algorithm. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 1.2"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What assumption does the paper make about the data stream arrival rate and where is it stated?",
+      "purpose": "To identify and locate Assumption 1 (arrival rate bound)"
+    },
+    {
+      "rank": 2,
+      "prompt": "What violation scenario would break the non-overlapping constraint (Definition 4)?",
+      "purpose": "To construct Assumption 3 violation scenario"
+    },
+    {
+      "rank": 3,
+      "prompt": "In what real-world scenario would z-normalised Euclidean distance fail to identify meaningful motifs?",
+      "purpose": "To draft the violation scenario for Assumption 2"
+    },
+    {
+      "rank": 4,
+      "prompt": "Where in the paper is the assumption about z-normalisation stated? What section and paragraph?",
+      "purpose": "To provide a valid paper reference for Assumption 2"
+    },
+    {
+      "rank": 5,
+      "prompt": "What is the paper reference for Definition 4 (non-overlapping constraint)?",
+      "purpose": "To locate the paper reference for Assumption 3"
+    }
+  ]
+}

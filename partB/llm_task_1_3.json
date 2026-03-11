@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers What the Paper Claims to Improve \u2014 baseline methods, limitations, and conditions for non-improvement. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 1.3"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What is the main baseline the paper compares against and in which reference does it appear?",
+      "purpose": "To identify the correct prior method (SDM 2009)"
+    },
+    {
+      "rank": 2,
+      "prompt": "What happens to the offline algorithm when a single data point is inserted into the stream?",
+      "purpose": "To explain why offline motif discovery fails for streaming data"
+    },
+    {
+      "rank": 3,
+      "prompt": "Under what conditions would the na\u00efve O(w^2 m) streaming approach be fast enough to use directly?",
+      "purpose": "To reason about when the paper's method is not needed"
+    },
+    {
+      "rank": 4,
+      "prompt": "For what window sizes does the paper's amortised speedup become most significant?",
+      "purpose": "To identify the regime where the paper's method wins most"
+    },
+    {
+      "rank": 5,
+      "prompt": "What performance comparison does Section 5 of the paper present?",
+      "purpose": "To understand the empirical validation approach"
+    }
+  ]
+}

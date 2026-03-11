@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers LLM usage disclosure files for all tasks. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 4.2"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What JSON structure should the LLM usage disclosure file follow for Part B?",
+      "purpose": "To understand the required fields and format"
+    },
+    {
+      "rank": 2,
+      "prompt": "What additional fields does Part B require beyond the Part A LLM disclosure format?",
+      "purpose": "To add task_tag, code_used_verbatim, student_modification fields"
+    },
+    {
+      "rank": 3,
+      "prompt": "What is the minimum number of interactions each LLM disclosure file must contain?",
+      "purpose": "To ensure each file has at least one logged interaction"
+    },
+    {
+      "rank": 4,
+      "prompt": "Should the top_5_prompts be drawn from ALL interactions or only from the specific task file?",
+      "purpose": "To confirm that prompts must come from the specific task's file"
+    },
+    {
+      "rank": 5,
+      "prompt": "How do I write a student_verification statement that is honest about LLM assistance while confirming independent reasoning?",
+      "purpose": "To draft an appropriate student declaration"
+    }
+  ]
+}

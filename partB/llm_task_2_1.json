@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Dataset Selection and Setup \u2014 synthetic stream with planted motifs. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 2.1"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What synthetic dataset design would best demonstrate the correctness of the streaming motif algorithm while being CPU-fast?",
+      "purpose": "To justify the synthetic sine burst + Gaussian noise choice"
+    },
+    {
+      "rank": 2,
+      "prompt": "How should I generate a z-normalisation-friendly planted motif in a short numpy stream?",
+      "purpose": "To design the generative process for the planted sine burst"
+    },
+    {
+      "rank": 3,
+      "prompt": "What limitations does a synthetic dataset vs. the paper's Space Shuttle telemetry dataset have?",
+      "purpose": "To construct the honest limitation statement for Task 2.1"
+    },
+    {
+      "rank": 4,
+      "prompt": "What parameters (m, w, N) are most appropriate for a clear streaming motif demonstration?",
+      "purpose": "To select m=20, w=100, N=500 as reasonable parameters"
+    },
+    {
+      "rank": 5,
+      "prompt": "How do I save a numpy array to a file for use across multiple notebooks?",
+      "purpose": "To handle cross-notebook dataset sharing"
+    }
+  ]
+}

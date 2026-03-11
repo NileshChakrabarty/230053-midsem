@@ -1,0 +1,44 @@
+{
+  "paper": "Online Discovery and Maintenance of Time Series Motifs (KDD 2010)",
+  "student_declaration": "I acknowledge that this LLM usage disclosure accurately reflects all interactions with large language models during this task. The analysis, interpretations, ablation choices, and failure mode identification are my own. Antigravity (the coding assistant) was used to help structure and write the code; all conceptual decisions, paper interpretations, and experimental design are mine.",
+  "student_verification": "This file covers Failure mode: non-stationary amplitude stream causing z-normalisation to conflate different patterns. All interactions are logged. The LLM was used for reading comprehension support, code structuring, and drafting. Ablation design, failure mode selection, and interpretations are my own reasoning.",
+  "interactions": [
+    {
+      "role": "assistant",
+      "model": "Antigravity (Google DeepMind)",
+      "timestamp": "2026-03-11T23:16:00+05:30",
+      "prompt": "Read both PDFs line by line \u2014 MidSem_PartB.pdf (exam spec) and the research paper 1835804.1835941.pdf. Follow every instruction in Part B exactly. Build the complete submission for the paper: Online discovery and maintenance of time series motifs.",
+      "response_summary": "Extracted both PDFs using pdfplumber. Read the full exam spec (11 pages) and research paper (11 pages). Built all notebooks, JSON files, and report from scratch.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "task_tag": "Task 3.2"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What failure scenario for the streaming motif algorithm is most directly linked to Assumption 2 (z-normalisation sufficiency)?",
+      "purpose": "To identify the amplitude non-stationarity failure mode"
+    },
+    {
+      "rank": 2,
+      "prompt": "How do I construct a stream where z-normalisation makes two structurally different subsequences look nearly identical?",
+      "purpose": "To design the high-amplitude spike vs. low-amplitude sine burst experiment"
+    },
+    {
+      "rank": 3,
+      "prompt": "What does the method fail to distinguish and why is this a genuine failure rather than a limitation?",
+      "purpose": "To frame the failure mode explanation correctly"
+    },
+    {
+      "rank": 4,
+      "prompt": "What is a concrete one-sentence modification to the algorithm that would address this failure?",
+      "purpose": "To draft the suggested regime-aware normalisation fix"
+    },
+    {
+      "rank": 5,
+      "prompt": "How do I visualise the z-normalised shapes of the two pairs side by side to show the algorithm cannot distinguish them?",
+      "purpose": "To design the three-panel failure mode plot"
+    }
+  ]
+}
